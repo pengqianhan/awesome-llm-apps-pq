@@ -4,7 +4,11 @@ from swarm import Swarm, Agent
 from datetime import datetime
 from dotenv import load_dotenv
 
-load_dotenv()
+# os.environ['OPENAI_MODEL_NAME'] = "llama3.2:latest"
+# os.environ['OPENAI_BASE_URL'] = 'http://localhost:11434/v1'
+# os.environ['OPENAI_API_KEY'] = 'any'
+
+load_dotenv()## load the environment variables from the .env file
 MODEL = "llama3.2:latest"
 client = Swarm()
 
